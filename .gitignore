@@ -1,0 +1,13 @@
+build/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+dist/
+replay.jsonl
+replay_summary.json
+diagnostics_report.json
+diagnostics_anomalies.csv
+calibration_report.json
+.DS_Store

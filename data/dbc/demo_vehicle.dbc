@@ -1,0 +1,29 @@
+VERSION "demo_vehicle"
+
+NS_ :
+BS_:
+BU_: Vector__XXX
+
+BO_ 291 STEERING: 8 Vector__XXX
+ SG_ steering_angle_deg : 0|16@1+ (0.1,-780) [-780|780] "deg" Vector__XXX
+ SG_ steering_rate_deg_s : 16|16@1+ (0.5,-1000) [-1000|1000] "deg_s" Vector__XXX
+ SG_ steering_seq : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 292 VEHICLE_SPEED: 8 Vector__XXX
+ SG_ vehicle_speed_mps : 0|16@1+ (0.01,0) [0|100] "m_s" Vector__XXX
+ SG_ speed_seq : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 293 IMU_ACCEL: 8 Vector__XXX
+ SG_ longitudinal_accel_mps2 : 0|16@1+ (0.01,-20) [-20|20] "m_s2" Vector__XXX
+ SG_ lateral_accel_mps2 : 16|16@1+ (0.01,-20) [-20|20] "m_s2" Vector__XXX
+ SG_ accel_seq : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 294 BRAKE: 8 Vector__XXX
+ SG_ brake_pressure_bar : 0|16@1+ (0.1,0) [0|250] "bar" Vector__XXX
+ SG_ brake_cmd_pct : 16|16@1+ (0.1,0) [0|100] "pct" Vector__XXX
+ SG_ brake_seq : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 295 CAMERA_CALIBRATION: 8 Vector__XXX
+ SG_ reprojection_error_px : 0|16@1+ (0.001,0) [0|5] "px" Vector__XXX
+ SG_ calibration_status : 16|8@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ camera_seq : 48|8@1+ (1,0) [0|255] "" Vector__XXX
